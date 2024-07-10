@@ -1,0 +1,59 @@
+<?php
+require 'conexion.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/ico" href="img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Login</title>
+</head>
+<body>
+    <center>
+        <ul  class="menu">	
+        <li><a href="registro.html">Registrarme</a></li>
+        <li><a href="Inicio.html" >Inicio</a></li>
+        <li><a href="historia VPM.html">Quiénes somos</a></li>
+        <li><a href="productos.html">Productos y Servicios</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="Curriculumpag.html">Currículum</a></li>
+
+        </ul></center>
+
+        <center><section class="formulario" style="width: 1120px;
+            height: 850px;
+            background: #DDD9DD;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border-radius: 15px;">
+            <div class="titulo-form">Login</div><br>
+                <section class="contornoform" style="height: 450px;">
+                <form action="controlLogin.php" class="formulario" id="formulario" name="formulario">
+                <?php
+                include("conexion.php");
+                include("controlLogin.php");
+                ?> 
+                <div>    
+                    <label for="nombre">Nombre de Usuario:</label>
+                    <input type="text" id="nombre" name="nombre" >
+                </div>
+                    <br>
+                
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena">
+                </div>
+                    <br>                      
+                    <ul class="error" id="error"></ul><br>
+
+                <div class="boton"><button type="submit" value="Iniciar" onclick="validarCampos()">Iniciar Sesión</button></div>
+                </form>	
+                </section>
+            </section></center>
+            <script src="inicioSesion.js"></script>
+</body>
+</html>

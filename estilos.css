@@ -1,0 +1,390 @@
+
+body{
+
+	
+	background-color: #DAC4D5;
+
+}
+  
+
+h1{
+	font-family: 'Libre Baskerville', serif;
+	font-size:40px ;
+	color: #000000;
+	letter-spacing:  12px;
+	text-align: center;
+	background-color: #acaaaa;
+	text-transform: uppercase;
+}
+.card-container {
+	
+  display: flex;
+  justify-content: space-around; /* Opcional: Puedes usar 'space-between', 'space-evenly', o 'center' según tus necesidades */
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+ 
+  }
+
+.card:hover {
+	transform: scale(1.05); /* Escalar la tarjeta en un 5% al pasar el ratón sobre ella */
+  }
+  
+.carrusel{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: scroll;
+}
+.elemento {
+	flex: 1 0 auto;
+	margin: 0 50px;
+	background-color: #443c3a;
+	width: 380px;
+	height: 380px;
+}
+.menu{
+	list-style: none;
+	background-color: #525252;
+	width: 90%;
+	max-width: 1500px;
+	margin: auto;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+.menu li a:hover{
+	background: #dd9bc4;
+}
+
+i{
+	font-size:20px ;
+	color: #000000;
+	text-transform: revert-layer;
+	background-color: #DAC4D5;
+
+}
+/*.textHistoria{
+	text-align: center; /* Margen alrededor del párrafo 
+	padding-left: 20px;
+	padding-right: 20px; 
+}*/
+h3{	
+	color: #000000;
+	font-size: 25px;
+	background-color: #acaaaa;}
+table th {
+	width: 20em;
+}
+table{
+	border-style: solid;
+	border-collapse: collapse;
+	border-width: 5px;
+	border-color: #AD91A6;
+	border-bottom: #8c4e8d;
+	background-color: #FFD0F4;
+	color: #000000;
+    margin: 20px;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+th h3{
+  background-color: #f2f2f2; /* Color de fondo */
+  padding: 10px; /* Relleno */
+  text-align: center; 
+  margin: 0; /* Eliminar el margen predeterminado */
+  color: #333;
+  border-radius: 10px;
+}
+
+tr:nth-of-type(1)>th{
+	background-color:#dd9bc4;
+}
+td{
+	font-family: cursive;
+	font-size:20px ;
+	text-align: center;
+	
+}
+h2{
+	font-family: cursive;
+	font-size:20px ;
+	text-align: center;
+	background-color: #ebebeb;
+}
+.seccion{
+	width: 1064px;
+	height: 636px;
+	/*flex-shrink: 0;*/
+	background: #DDD9DD;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 15px;
+	
+}
+.titulo-form{
+	display: flex;
+	width: 1119px;
+	height: 142px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: linear-gradient(180deg, #D196DB 2.08%, rgba(209, 150, 219, 0.00) 100%);
+	color: #65007eb6;
+	text-align: center;
+	font-family: Inter;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 15px;
+}
+.seccion-2{
+	width: 1020px;
+	height: 560px;
+	flex-shrink: 0;
+	border: 2px solid #000;
+	
+}
+.seccion-3{
+	width: 1020px;
+	height: 590px;
+	flex-shrink: 0;
+	border: 2px solid #000;
+}
+input{
+	width: 591px;
+	height: 65px;
+	flex-shrink: 0;
+	border-radius: 15px;
+	border: 2px solid #000;
+	background: #D4BED8;
+}
+label{
+	width: 310px;
+	height: 63px;
+	flex-shrink: 0;
+	color: #000000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.boton{
+	width: 302px;
+	height: 51px;
+	flex-shrink: 0;
+	color: #000;
+	text-align: center;
+	font-family: Inter;	
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+button{
+	width: 268px;
+	height: 53px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	border: 2px solid #000;
+	background: #BFB6BD;
+}
+
+.formulario{
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+h4{
+	text-align: center;
+	font-family: Inter;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color:rgb(0, 0, 0);
+	
+}
+/*h4{
+	text-align: center;
+	font-family: Inter;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color:rgb(0, 0, 0);
+	
+}*/
+.contornoform{
+	width: 940px;
+	height: 1238px;
+	border: 2px solid #000000;
+	padding-top: 2%; 
+    padding-bottom: 2%
+	
+}
+.contornoform-Insert{
+	width: 940px;
+	height: 255px;
+	border: 2px solid #000000;
+	padding-top: 2%; 
+    padding-bottom: 2%
+}
+.btn-elige {
+	display: inline-block;
+	width: 150px;
+	height: 15px;
+	padding: 30px 40px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(109, 77, 117); /* Color de fondo del botón */
+	color: #fff; /* Color del texto del botón */
+	border-radius: 5px; /* Bordes redondeados */
+	transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .btn-elige:hover {
+	background-color: #bd47f8; /* Color de fondo del botón al pasar el mouse sobre él */
+  }
+  .btn-carrito{
+	display: inline-block;
+	width: 120px;
+	height: 10px;
+	padding: 30px 40px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(149, 94, 163); /* Color de fondo del botón */
+	color: #fff; /* Color del texto del botón */
+	border-radius: 5px; /* Bordes redondeados */
+	transition: background-color 0.3s ease; 
+  }
+  .btn-carrito:hover {
+	background-color: #6e2891; /* Color de fondo del botón al pasar el mouse sobre él */
+  }
+
+.error{
+	display: none;
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #ce1818;
+	color: #fff;
+	padding: 15px 10px;
+	padding-left: 40px;
+}
+.errorProv{
+	display: none;
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #ce1818;
+	color: #fff;
+	padding: 15px 10px;
+	padding-left: 40px;
+}
+.letra{
+	color: rgb(0, 0, 0);
+}
+input[type="color"] {
+	width: 275px; 
+	height: 40px; 
+	border-radius: 15px;
+  }
+  option {
+	background-color: #ac4da4; 
+	color: #333; 
+	font-size: 16px; 
+  }
+  select {
+	width: 200px;
+	/*width: 100px;*/
+	height: 50px;
+	padding: 10px; 
+	border: 2px solid #333; 
+	border-radius: 5px; 
+	background-color: #D4BED8; 
+	color: #333; 
+	font-size: 16px; 
+  }
+ 
+  .inicioSesion{
+	width: 1119px;
+	height: 770px;
+	/*flex-shrink: 0;*/
+	background: #DDD9DD;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 15px;
+	
+}
+.regProveedor{
+	width: 1119px;
+	height: 970px;
+	/*flex-shrink: 0;*/
+	background: #DDD9DD;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 15px;
+}
+.seccion-prov{
+	width: 940px;
+	height: 738px;
+	border: 2px solid #000000;
+	padding-top: 2%; 
+    padding-bottom: 2%
+}
+.inicioSesion{
+	width: 1119px;
+	height: 770px;
+	/*flex-shrink: 0;*/
+	background: #DDD9DD;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 15px;
+	
+}
+.usuario{
+	width: 1120px;
+	height: 795px;
+	background: #DDD9DD;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 15px;
+}
+.botonAdmin{
+	width: 302px;
+	height: 51px;
+	flex-shrink: 0;
+	color: #000;
+	text-align: center;
+	font-family: Inter;	
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.admin{
+	width: 268px;
+	height: 73px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	border: 2px solid #000;
+	background: #BFB6BD;
+}

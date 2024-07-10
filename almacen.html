@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/ico" href="img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Almacén</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+	
+        <ul class="menu">
+            <li><a href="registro.html">Registrarme</a></li>
+        	<li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="historia VPM.html">Quiénes somos</a></li>
+            <li><a href="productos.html">Productos y Servicios</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="Curriculumpag.html">Currículum</a></li>
+        </ul></center><br>
+<center><section class="inicioSesion" style="height: 925px; width:1200px ;">
+    <div class="titulo-form" style="width: 1200px;">Control de almacén</div><br>
+        <section class="seccion-2" style="height: 715px; width: 1100px;"><br>
+        <form method="get" action="almacen.php" >
+            <br>
+            
+<table  style="width: 1050px">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Cantidad de entradas</th>
+            <th>Cantidad de salidas</th>
+            <th>Stock</th>
+            <th>Precio</th>
+
+        </tr>
+    </thead>
+<tbody>
+        <tr>
+            <td>
+                <select  id="nameProducto" name="nameProducto" required="">
+                    <option value=""></option>
+                    <option value="Prenda">Crop top	</option>
+                    <option value="Prenda">Pantalón</option>
+                    <option value="Prenda">Falda</option>
+                    <option value="Prenda">Sudadera unisex</option>
+                    <option value="Prenda">Shorts</option>
+                    <option value="Prenda">Playera gatos</option>
+                    <option value="Prenda">Camisa</option>
+                    <option value="Prenda">Tenis</option>
+                    <option value="Accesorio">Bandas para el cabello</option>
+                    <option value="Accesorio">Aretes Dados</option>
+                    <option value="Accesorio">Set de chicas superpoderosas</option>
+                    <option value="Accesorio">Collar de Jupiter</option>
+                    <option value="Accesorio">Anillos de plata tibetana</option>
+                    <option value="Accesorio">Lentes de sol	</option>
+                    <option value="Accesorio">Accesorio fresas</option>                  
+                </select></td>
+            <td> 
+                <input type="text" id="descripcion" name="descripcion" style="width: 100px; height: 40px;" required="">
+            </td>
+            <td> 
+                <input type="number" id="entradas" name="entradas" style="width: 100px; height: 40px;" required="">
+            </td>
+            <td> 
+                <input type="number" id="salidas" name="salidas" style="width: 100px; height: 40px;" required="">
+            </td>
+            <td> 
+                <input type="number" id="stock" name="stock" style="width: 100px; height: 40px;" required="">
+            </td>
+            <td> 
+                <input type="number" id="precio" name="precio" style="width: 100px; height: 40px;" required="">
+            </td>
+            
+              
+        </tr>               
+    </tbody>
+    </table>
+    
+    <table  style="width: 1050px">    
+        <thead>
+           
+            <tr>
+                <th>ID del empleado</th>
+                <th>ID de inventario</th>
+                <th>ID de prenda</th>
+                <th>ID de accesorio</th>
+                <th>ID de proveedor</th>
+                <th>ID de entrada</th>
+                <th>ID de salida</th>
+    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 
+                    <input type="number" id="idEmpleado" name="idEmpleado" style="width: 100px; height: 40px;" required="">
+                </td>
+                <td> 
+                    <input type="number" id="idInventario" name="idInventario" style="width: 100px; height: 40px;" required="">
+                </td>
+                <td> 
+                    <input type="number" id="idPrenda" name="idPrenda" style="width: 100px; height: 40px;" required="">
+                </td>
+                <td> 
+                    <input type="number" id="idAcces" name="idAcces" style="width: 100px; height: 40px;" required="">
+                </td>
+                <td> 
+                    <input type="number" id="idProveedor" name="idProveedor" style="width: 100px; height: 40px;" required="">
+                </td>
+                <td> 
+                    <input type="number" id="idEntrada" name="idEntrada" style="width: 100px; height: 40px;" required="">
+                </td>
+                <td> 
+                    <input type="number" id="idSalida" name="idSalida" style="width: 100px; height: 40px;" required="">
+                </td>
+            </tr>
+        </tbody>
+</table>
+<br>
+
+<ul class="error" id="error"></ul><br>
+            
+<div class="boton"><button type="submit" value="Registrar" onclick="validarCampos()">Agregar Registro</button></div>
+<br><br><a name="" id="" class="btn-elige" href="entrada.html" role="button" style="font-size: 20px; background-color: rgb(red, green, blue);" >Entradas</a><br><br>
+<a name="" id="" class="btn-elige" href="salida.html" role="button" style="font-size: 20px; background-color: rgb(red, green, blue);">Salidas</a>
+</form>       
+</section>
+</section>
+</center>
+<script src="almacen.js"></script>
+</body>
+</html>

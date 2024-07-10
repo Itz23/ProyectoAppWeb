@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/ico" href="img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Registrarse como cliente</title>
+</head>
+<body>
+    <center>
+	
+        <ul class="menu">
+            <li><a href="registro.html">Registrarme</a></li>
+        	<li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="historia VPM.html">Quiénes somos</a></li>
+            <li><a href="productos.html">Productos y Servicios</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="Curriculumpag.html">Currículum</a></li>
+        </ul></center>
+        <br><br>
+        <center><section class="inicioSesion">
+            <div class="titulo-form">¡Aquí puedes registarte como cliente!</div><br>
+                <section class="seccion-2"><br>
+                <form method="get" action="registroCliente.php">
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required="">
+                    <br><br>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required="">
+                    <br><br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="text" id="email" name="email" required="">
+                    <br><br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="password" id="telefono" name="telefono" required="">
+                    <br><br>
+                    <ul class="error" id="error"></ul><br>
+
+                <div class="boton"><button type="submit" value="registar" onclick="validarCampos()">Registrarme</button></div>
+                </form>       
+                </section>
+                </section>
+            </center>
+            <script src="inicioSesion.js"></script>
+
+</body>
+</html>
